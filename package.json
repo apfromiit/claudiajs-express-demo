@@ -1,10 +1,10 @@
 {
-  "name": "claudia-express",
+  "name": "claudia-express-demo",
   "version": "1.0.0",
   "description": "Example application for running a Node Express app on AWS Lambda using Amazon API Gateway.",
   "main": "lambda.js",
   "scripts": {
-    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --region us-east-1",
+    "deploy": "claudia create --handler lambda.handler --deploy-proxy-api --runtime nodejs16.x --region us-west-2",
     "update": "claudia update",
     "generate-proxy": "claudia generate-serverless-express-proxy --express-module app"
   },
